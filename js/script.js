@@ -32,8 +32,3 @@ for (let i = 0; i < 2; i++) {
         console.log('kinoman');
     }
     else {console.log ('error');}
-
-    function showFirstMes () {
-        console.log('Hello Ukraine');
-    }
-        showFirstMes();
