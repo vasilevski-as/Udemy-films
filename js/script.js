@@ -1,23 +1,19 @@
-let numberOfFilms;
-
-function start() {
-    numberOfFilms = +prompt('сколько фильмов вы уже посмотрели', '');
-
-    while(numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)){
-        numberOfFilms = +prompt('сколько фильмов вы уже посмотрели', '');
-    }
-}
-start();
+'use strict';
 
 const peronalMovieDB = {
-    count: numberOfFilms,
+    count: 0,
     movies: {},
     actors: {},
     genres: [],
-    privat: true
-};
+    privat: false,
+    start: function() {
+        peronalMovieDB.count = +prompt('сколько фильмов вы уже посмотрели', '');
 
-    function rememberMyFilms (){
+        while (peronalMovieDB.count == '' || peronalMovieDB.count == null || isNaN (peronalMovieDB.count)) {
+            peronalMovieDB.count = +prompt('сколько фильмов вы уже посмотрели', '');
+        }
+    },
+    rememberMyFilms: function () {
         for (let i = 0; i < 2; i++) {
             const a = prompt ('один из просмотренных фильмов', ''),
                   b = prompt ('на сколько оцените его', '');
@@ -28,13 +24,10 @@ const peronalMovieDB = {
             } else {
                 console.log ('error');
                 i--;
-                }
             }
-    }
-
-    rememberMyFilms();
-
-    function detectPersonalLevel() {
+        }
+    },
+    detectPersonalLevel: function() {
         if (peronalMovieDB.count < 10){
             console.log('low');
         }
@@ -45,22 +38,16 @@ const peronalMovieDB = {
             console.log('kinoman');
         }
         else {console.log ('error');}
+    },
+    showMyDB: function (hiden) {
+        if (!hiden){
+          console.log (peronalMovieDB);  
+        }
+    },
+    writeYourGenres: function () {
+        for (let i = 1; i <= 3; i++) {
+            const genre = prompt(`ваш любимый жанр номер ${i}`);
+            peronalMovieDB.genres[i - 1] = genre;
+        }
     }
-
-detectPersonalLevel();
-
-function showMyDB (hiden) {
-    if (!hiden){
-        console.log (peronalMovieDB);  
-    }
-}
-showMyDB(peronalMovieDB.privat);
-
-function writeYourGenres (){
-    for (let i = 1; i <= 3; i++) {
-        const genre = prompt(`ваш любимый жанр номер ${i}`);
-        peronalMovieDB.genres[i - 1] = genre;
-    }
-
-}
-writeYourGenres();
+};
