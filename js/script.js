@@ -32,7 +32,7 @@ const peronalMovieDB = {
             }
     }
 
-    // rememberMyFilms();
+    rememberMyFilms();
 
     function detectPersonalLevel() {
         if (peronalMovieDB.count < 10){
@@ -47,7 +47,7 @@ const peronalMovieDB = {
         else {console.log ('error');}
     }
 
-// detectPersonalLevel();
+detectPersonalLevel();
 
 function showMyDB (hiden) {
     if (!hiden){
@@ -63,4 +63,4 @@ function writeYourGenres (){
     }
 
 }
-// writeYourGenres();
+writeYourGenres();
