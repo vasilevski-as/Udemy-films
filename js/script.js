@@ -46,8 +46,22 @@ const peronalMovieDB = {
     },
     writeYourGenres: function () {
         for (let i = 1; i <= 3; i++) {
-            const genre = prompt(`ваш любимый жанр номер ${i}`);
-            peronalMovieDB.genres[i - 1] = genre;
+            let genre = prompt(`ваш любимый жанр номер ${i}`);
+            
+        while (genre == '' || genre == null){
+                genre = prompt(`ваш любимый жанр номер ${i}`);           
+        }
+            peronalMovieDB.genres[i - 1] = genre; 
+        }
+        peronalMovieDB.genres.forEach (function(item, i) {
+            console.log( `Любимый жанр ${i+1} - это ${item} `);
+        });
+    },
+    toggleVisibleMyDB: function(){
+        if (peronalMovieDB.privat) {
+            peronalMovieDB.privat = false;
+        } else {
+            peronalMovieDB.privat = true;
         }
     }
 };

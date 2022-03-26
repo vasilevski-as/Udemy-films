@@ -109,7 +109,7 @@ ar.push(22);
 ar[5] = 0;
 console.log(ar);
 
-ar.forEach(function (it, i, arr) {
+ar.forEach(function (it, i, ar) {
     console.log(`${i}: ${it} внутри масива ${ar}`);
 });
 
