@@ -203,3 +203,38 @@ const soldier = {
 
 const jonh = Object.create(soldier);
 jonh.sayHello();
+
+// types of data
+
+//to string
+
+console.log(typeof(String(null)));
+console.log(typeof(String(4)));
+
+console.log(typeof(5 + ''));
+
+//to number
+
+console.log(typeof(Number('4')));
+
+console.log(typeof( + '5'));
+
+console.log(typeof(parseInt("15px", 10)));   //10я система исчисления
+
+//to boolean
+
+// 0, "", null, undefined, NaN
+
+let switcher = null;
+if (switcher){
+    console.log('working...');
+}
+switcher = 1;
+if (switcher){
+    console.log('working..');
+}
+
+console.log(typeof(Boolean('4')));
+
+console.log(typeof(!!"444444"));
+
