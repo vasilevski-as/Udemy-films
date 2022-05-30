@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #094a36;
+}
+.container {
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #eee;
+}
+.title {
+    margin: 0 0 15px;
+    font-size: 30px;
+    color:rgb(5, 5, 111);
+}
+.bottom {
+    display: inline-block;
+    padding: 8px 24px;
+    background-color:rgb(0, 255, 85);
+    font-size: 18px;
+    color:#094a36;
+    text-decoration: none;
+    border-radius: 10px;
+}

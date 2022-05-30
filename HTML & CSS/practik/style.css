@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#121212;
+    line-height: 1.5;
+    background: url("img/bg.png")
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* head */
+.page {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.container {
+    display: flex;
+}
+
+.header {
+    padding: 20px;
+    background-color:#121212;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-sub {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(106, 118, 231);
+    text-align: center;
+    font-weight: normal;
+}
+
+/* nav */
+
+.nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black
+}
+
+.nav-link:hover {
+    background-color: #eee;
+}
+
+/* img */
+
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* content */
+
+.content {
+    width: 800px;
+    padding: 0 20px;
+}
+
+.content-title {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #ce2929;
+}
+
+.content-text {
+    margin-bottom: 20px;
+}
+.read-more {
+    display: inline-block;
+    padding: 8px 12px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* sidebar */
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    background-color:#eee;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    color:rgb(186, 7, 7);
+    margin-bottom: 20px;
+}
+
+/* article */
+
+.art-title {
+    font-size: 18px;
+    color:rgb(17, 123, 123);
+    margin: 0 0 5px;
+}
+.art-title a {
+    color: inherit;
+    text-decoration: none;
+}
+.art-title a:hover{
+    text-decoration: underline;
+}
+
+
+.art-date {
+    display: block;
+    color:rgb(37, 94, 75);
+    font-size: 12px;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.footer {
+    padding: 20px;
+    background:#121212;
+    text-align: center;
+    color:#fff;
+}
+
+/* auth */
+
+.auth {
+    width: 260px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(242, 235, 173);
+    border: 5px solid rgb(194, 185, 105);
+    border-radius: 10px;
+}
+.auth-titke {
+    font-size: 20px;
+    color:#052ea1;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+/* input */
+.input {
+    display: block;
+    padding: 8px 10px;
+    width: 238px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+}
+.input:focus {
+    outline: none;
+    border-color: rgb(236, 101, 47);
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.select {
+    display: block;
+    display: block;
+    padding: 8px 10px;
+    width: 260px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color:#fff
+}
+.select:focus {
+    outline: none;
+    border-color: rgb(236, 101, 47);
+    border-radius: 10px;
+    border-width: 3px;
+}
+.checkbox {
+    margin-top: 15px;
+}
+.btn1 {
+    background-color:rgb(114, 250, 125);
+    padding: 5px 10px;
+    width: 126px;
+    border: 2px solid rgb(62, 144, 62);
+    border-radius: 10px;
+    font: inherit;    
+}
+.btn1:hover {
+    background-color:rgb(94, 218, 104);
+}
+.btn1:active {
+    background-color:rgb(83, 195, 93);
+}
+.btn2 {
+    background-color:rgb(242, 146, 111);
+    padding: 5px 10px;
+    width: 126px;
+    border: 2px solid rgb(202, 107, 72);
+    border-radius: 10px;
+    font: inherit;    
+}
+.btn2:hover {
+    background-color:rgb(208, 125, 94);
+}
+.btn2:active {
+    background-color:rgb(183, 111, 86);
+}
+
+.compos {
+    width: 650px;
+    height: 400px;
+    margin: 20px auto;
+    background-color:rgb(201, 184, 161);
+    position: relative;
+    overflow: hidden;
+}
+.roud{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index:1;
+}
+.car {
+    position:absolute;
+    right: 30px;
+    bottom: 40px;
+    z-index:3;
+}
+.tree {
+    position:absolute;
+    right: 50px;
+    bottom: 80px;
+    z-index:2;
+}
+.cloud {
+    position:absolute;
+    left: -30px;
+    top: 40px;
+    z-index:1;
+}
